@@ -37,13 +37,17 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
 
     for (i = 0; i < nums3Size; i++)
     {
-        printf("%d", nums3[i]);
+        return nums3[i];
     }
 }
 
 int main()
 {   
     int *arr1[3] = {1,3,4}, *arr2[3] = {5,7,9};
-    findMedianSortedArrays(arr1,3,arr2,3);
+    int output;
+    output = findMedianSortedArrays(arr1,3,arr2,3);
+
+    printf("%d",output);
+
     return 0;
 }
